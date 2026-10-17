@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f8fc">
+    <meta name="description" content="A clean, modern starting point for your next Azure web app.">
+    <title>Azure Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Azure Web App home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M18.7 3.5 7.1 24.2h8.2l3.4-6.1 5.1 8.9H8.2l-2 3.5h23.1L18.7 3.5Z" fill="currentColor"/>
+              <path d="m14 17.4 4.7-8.3 2.1 8.3h-6.8Z" fill="currentColor" opacity=".55"/>
+            </svg>
+          </span>
+          <span>azure<span class="brand-light">/</span>webapp</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="topbar-link" href="#get-started">Get started <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero" id="about">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT IDEA STARTS HERE</div>
+            <h1>Make room for<br>what’s <span class="gradient-text">next.</span></h1>
+            <p class="hero-description">A fresh, flexible starting point for your next big thing. Built to feel at home on Azure and ready for whatever you create.</p>
+            <div class="hero-actions" id="get-started">
+              <a class="button button-primary" href="#features">Explore the app <span aria-hidden="true">→</span></a>
+              <a class="button button-quiet" href="#about">Discover more <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="trust-note">
+              <span class="avatar-stack" aria-hidden="true">
+                <span>✦</span><span>↗</span><span>●</span>
+              </span>
+              <span>A simple start. <strong>Infinite possibilities.</strong></span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Abstract illustration of connected cloud services">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+            <div class="visual-glow"></div>
+            <div class="cloud-card">
+              <div class="cloud-card-top">
+                <span class="cloud-card-label"><span class="live-dot"></span> APP STATUS</span>
+                <span class="more-dots" aria-hidden="true">•••</span>
+              </div>
+              <div class="cloud-icon-wrap">
+                <svg class="cloud-icon" viewBox="0 0 88 72" fill="none" aria-hidden="true">
+                  <path d="M22.2 59.8h44.1a15.7 15.7 0 0 0 1.5-31.3 24.6 24.6 0 0 0-47.6-3.2 17.3 17.3 0 0 0 2 34.5Z" fill="url(#cloudGradient)"/>
+                  <path d="M44.8 33.1 34.5 51h8.1l3-5.3 4.4 7.7H34.1l-1.8 3.1h20.4L44.8 33.1Z" fill="white" opacity=".95"/>
+                  <defs>
+                    <linearGradient id="cloudGradient" x1="23" y1="22" x2="68" y2="61" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#54C7FF"/>
+                      <stop offset="1" stop-color="#4674F5"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <p class="status-title">Everything’s looking good</p>
+              <p class="status-caption">Your app is up and running</p>
+              <div class="status-divider"></div>
+              <div class="status-bottom">
+                <span><span class="live-dot"></span> All systems operational</span>
+                <span class="status-check" aria-hidden="true">✓</span>
+              </div>
+            </div>
+            <div class="floating-badge badge-top"><span class="badge-symbol">✳</span><span>Built for<br><strong>what’s next</strong></span></div>
+            <div class="floating-badge badge-bottom"><span class="badge-spark">↗</span><span>Ready to<br><strong>take off</strong></span></div>
+            <span class="decor decor-cross" aria-hidden="true">✳</span>
+            <span class="decor decor-star" aria-hidden="true">✦</span>
+          </div>
+        </section>
+
+        <section class="feature-strip" id="features" aria-label="Highlights">
+          <article class="feature">
+            <span class="feature-icon icon-blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 4.5 6v5.1c0 4.6 3.2 8.8 7.5 9.9 4.3-1.1 7.5-5.3 7.5-9.9V6L12 3Z" stroke="currentColor" stroke-width="1.7"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h2>Reliable by design</h2><p>A solid foundation to build on, right from the start.</p></div>
+          </article>
+          <article class="feature">
+            <span class="feature-icon icon-violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 16.5 9 11l3.5 3.5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h2>Made to scale</h2><p>Room to grow as your ideas find their audience.</p></div>
+          </article>
+          <article class="feature">
+            <span class="feature-icon icon-teal" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 14.6 9l5.9.8-4.3 4.2 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.2 5.9-.8L12 3.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
+            <div><h2>Yours to shape</h2><p>A clean slate that’s ready to become your own.</p></div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>© 2025 Azure Web App</span>
+        <span class="footer-note"><span class="live-dot"></span> Made for what’s next</span>
+      </footer>
+    </div>
+  </body>
+</html>
